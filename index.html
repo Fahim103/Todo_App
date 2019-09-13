@@ -25,6 +25,13 @@
         </div>
 
         <h4>Todos</h4>
+        <label for="showTodos">Show</label>
+        <select name="showTodos" id="showTodoFilter">
+            <option value="all" selected>All Todos</option>
+            <option value="completed">Completed Todos</option>
+            <option value="incomplete">Incomplete Todos</option>
+        </select>
+        <br/> <br>
         <table id="todosTable" width="100%" border="1px solid black" style="border-collapse: collapse; text-align: center;"> 
             <thead>
                 <th width="5%">#</th>

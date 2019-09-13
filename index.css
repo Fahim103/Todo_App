@@ -1,0 +1,37 @@
+* {
+    font-size: 1.05rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todoCompleted {
+    text-decoration: line-through;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+#newTodoInputDiv,
+#updateTodoInputDiv {
+    display: flex;
+    margin: 5px;
+}
+
+#newTodoInputDiv [type=text], 
+#updateTodoInputDiv [type=text] {
+    flex: 10;
+}
+
+#newTodoInputDiv [type=button] {
+    flex: 2;
+    margin-left: 5px;
+}
+
+#updateTodoInputDiv [type=button] {
+    flex: 1;
+    margin-left: 5px;
+}
+
+table tr {
+    height: 2rem;
+}

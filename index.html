@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <!-- <script src="jquery-3.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <div id="newTodoInputDiv">
+            <input type="text" id="txtNewTodo" placeholder="Add New Todo...">
+            <input type="button" id="btnAddNewTodo" value="Add Todo">
+        </div>
+
+        <div id="updateTodoInputDiv">
+            <input type="text" id="txtUpdateTodo" class="hiddenInput">
+            <input type="button" id="btnUpdateTodo" value="Update Todo" class="hiddenInput">
+            <input type="button" id="btnCancelUpdateTodo" value="Cancel" class="hiddenInput">
+        </div>
+
+        <h4>Todos</h4>
+        <table id="todosTable" width="100%" border="1px solid black" style="border-collapse: collapse; text-align: center;"> 
+            <thead>
+                <th width="5%">#</th>
+                <th width="55%">Todos</th>
+                <th width="10%">Completed</th>
+                <th width="15%">Edit</th>
+                <th width="15%">Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
